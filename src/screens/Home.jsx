@@ -10,9 +10,12 @@ function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="font-poppins text-2xl font-bold text-[#2d3748]">
+              <Link
+                to="/"
+                className="font-poppins text-2xl font-bold text-[#2d3748]"
+              >
                 TalentMatch
-              </span>
+              </Link>
             </div>
 
             <div className="hidden md:flex items-center space-x-4">

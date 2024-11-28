@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -6,12 +6,12 @@ const Nav = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="font-poppins text-2xl font-bold text-[#2d3748]"
             >
               TalentMatch
-            </a>
+            </Link>
           </div>
         </div>
       </div>

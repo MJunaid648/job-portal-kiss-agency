@@ -62,7 +62,7 @@ function RecruitersHub() {
             Access verified US talent through AI-powered video profiles and
             revolutionize how you evaluate candidates
           </p>
-          <Link to="" target="_self">
+          <Link to="/recruiters-registration" target="_self">
             <button className="font-poppins bg-[#4a90e2] text-white px-8 py-3 rounded-lg hover:bg-[#357abd] text-lg">
               Start Hiring
             </button>
