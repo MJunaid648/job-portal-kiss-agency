@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function JobSeekers() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -10,20 +11,20 @@ function JobSeekers() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="font-poppins text-2xl font-bold text-[#2d3748]"
               >
                 TalentMatch
-              </a>
+              </Link>
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
-              <a href="/login" target="_self">
+              <Link to="/login" target="_self">
                 <button className="font-poppins px-8 py-3 rounded-lg bg-[#4a90e2] text-white hover:bg-[#357abd]">
                   Sign In
                 </button>
-              </a>
+              </Link>
             </div>
 
             <div className="md:hidden">
@@ -61,11 +62,11 @@ function JobSeekers() {
             Stand out to employers with AI-powered video introductions and
             verified credentials
           </p>
-          <a href="/job-seekers-registration" target="_self">
+          <Link to="/job-seekers-registration" target="_self">
             <button className="font-poppins bg-[#4a90e2] text-white px-8 py-3 rounded-lg hover:bg-[#357abd] text-lg">
               Create Your Profile
             </button>
-          </a>
+          </Link>
         </div>
 
         <section className="bg-white py-12 rounded-lg shadow-md mb-16">
@@ -146,7 +147,7 @@ function JobSeekers() {
                   </li>
                 </ul>
                 <button className="mt-6 bg-[#4a90e2] text-white px-8 py-3 rounded-lg hover:bg-[#357abd] font-poppins">
-                  <a href="/job-seekers-registration"> Join Now</a>
+                  <Link to="/job-seekers-registration"> Join Now</Link>
                 </button>
               </div>
             </div>

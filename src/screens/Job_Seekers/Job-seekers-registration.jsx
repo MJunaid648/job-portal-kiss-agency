@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import { useRef, useState } from "react";
 import { useLoader } from "../../context/Loader_context";
 import { jobSeekersRegistrationSchema } from "../../schemas";
+import { Link } from "react-router-dom";
 
 export default function JobSeekersRegistration() {
   const [attestation, setAttestation] = useState(false);
@@ -163,7 +164,7 @@ export default function JobSeekersRegistration() {
       <div className="max-w-4xl mx-auto">
         <div className="bg-white shadow rounded-lg p-6 space-y-6">
           <div className="text-center">
-            <a href="/recruiters-registration-and-page" target="_self">
+            <Link to="/recruiters-registration-and-page" target="_self">
               <div className="flex justify-between items-center mb-6">
                 <button
                   onClick={() =>
@@ -178,7 +179,7 @@ export default function JobSeekersRegistration() {
                   Are you a recruiter? Click here
                 </button>
               </div>
-            </a>
+            </Link>
             <h1 className="text-3xl font-bold font-poppins text-gray-900">
               Create Your{" "}
               {registrationType === "jobseeker" ? "Job Seeker" : "Employer"}{" "}

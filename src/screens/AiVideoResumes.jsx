@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const sampleVideos = [
   {
     id: 1,
@@ -53,6 +54,7 @@ const sampleVideos = [
   },
 ];
 function AiVideoResumes({ videos = sampleVideos, jobs = [] }) {
+  const navigate = useNavigate()
   const [searchTerm, setSearchTerm] = useState("");
   const [aiQuery, setAiQuery] = useState("");
   const [aiResponse, setAiResponse] = useState("");
@@ -324,7 +326,7 @@ function AiVideoResumes({ videos = sampleVideos, jobs = [] }) {
                     <div className="flex gap-2">
                       <button
                         onClick={() =>
-                          (window.location.href = `/profile/${video.id}`)
+                          navigate(`/profile/${video.id}`)
                         }
                         className="w-8 h-8 flex items-center justify-center bg-[#9b59b6] text-white rounded-full hover:bg-[#8e44ad]"
                         title="View Profile"

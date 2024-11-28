@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
@@ -47,17 +47,17 @@ function App() {
                 path="/recruiter-profile"
                 element={<RecruitersProfile />}
               />
-               <Route
+              <Route
                 path="/recruiter-project-hub"
-                element={<RecruiterProjectHub/>}
+                element={<RecruiterProjectHub />}
               />
               <Route
                 path="/job-seeker-profile-edit"
-                element={<JobSeekerProfileEdit/>}
+                element={<JobSeekerProfileEdit />}
               />
               <Route
                 path="/record-video-intro"
-                element={<RecordVideoIntro/>}
+                element={<RecordVideoIntro />}
               />
 
               {/* Protected Routes */}

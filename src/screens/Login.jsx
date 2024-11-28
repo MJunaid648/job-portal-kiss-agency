@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../API/api";
 import { loginSchema } from "../schemas";
 import { useLoader } from "../context/Loader_context";
@@ -115,12 +115,12 @@ function Login2() {
                   Remember me
                 </label>
               </div>
-              <a
-                href=""
+              <Link
+                to=""
                 className="font-poppins text-sm text-[#4a90e2] hover:text-[#357abd]"
               >
                 Forgot password?
-              </a>
+              </Link>
             </div>
             <button
               type="submit"
@@ -146,9 +146,9 @@ function Login2() {
 
           <p className="mt-6 text-center text-sm text-[#4a5568] font-poppins">
             Don't have an account?{" "}
-            <a href="/register" className="text-[#4a90e2] hover:text-[#357abd]">
+            <Link to="/register" className="text-[#4a90e2] hover:text-[#357abd]">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </main>

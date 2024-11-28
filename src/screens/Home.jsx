@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#f8f9fa]">
@@ -16,18 +16,18 @@ function Home() {
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
-              <a
-                href="/job-seekers"
+              <Link
+                to="/job-seekers"
                 className="font-poppins px-8 py-3 rounded-lg bg-[#4a90e2] text-white hover:bg-[#357abd]"
               >
                 For Job Seekers
-              </a>
-              <a
-                href="/recruiters-hub"
+              </Link>
+              <Link
+                to="/recruiters-hub"
                 className="font-poppins px-8 py-3 rounded-lg bg-[#4a90e2] text-white hover:bg-[#357abd]"
               >
                 For Recruiters
-              </a>
+              </Link>
             </div>
 
             <div className="md:hidden">
@@ -49,18 +49,18 @@ function Home() {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="px-4 py-2 space-y-2">
-            <a
-              href="/job-seekers"
+            <Link
+              to="/job-seekers"
               className="block w-full text-left font-poppins px-4 py-2 rounded-lg text-[#2d3748] hover:bg-[#4a90e2] hover:text-white"
             >
               Job Seekers
-            </a>
-            <a
-              href="/recruiters"
+            </Link>
+            <Link
+              to="/recruiters"
               className="block w-full text-left font-poppins px-4 py-2 rounded-lg text-[#2d3748] hover:bg-[#4a90e2] hover:text-white"
             >
               Recruiters
-            </a>
+            </Link>
           </div>
         </div>
       )}
@@ -126,18 +126,18 @@ function Home() {
               professional relationships.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
-              <a
-                href="/job-seekers"
+              <Link
+                to="/job-seekers"
                 className="font-poppins px-8 py-4 rounded-lg bg-[#4a90e2] text-white text-center hover:bg-[#357abd]"
               >
                 Find Your Next Role
-              </a>
-              <a
-                href="/recruiters"
+              </Link>
+              <Link
+                to="/recruiters-hub"
                 className="font-poppins px-8 py-4 rounded-lg bg-[#4a90e2] text-white text-center hover:bg-[#357abd]"
               >
                 Find Top Talent
-              </a>
+              </Link>
             </div>
           </div>
         </div>

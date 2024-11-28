@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function RecruitersHub() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -10,20 +11,20 @@ function RecruitersHub() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="font-poppins text-2xl font-bold text-[#2d3748]"
               >
                 TalentMatch
-              </a>
+              </Link>
             </div>
             <div className="hidden md:flex items-center space-x-4">
-              <a href="/recruiters-registration-and-page" target="_self">
+              <Link to="/recruiters-registration-and-page" target="_self">
                 <button className="font-poppins px-8 py-3 rounded-lg bg-[#4a90e2] text-white hover:bg-[#357abd]">
                   <i className="fab fa-linkedin mr-2"></i>
                   Sign in with LinkedIn
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="md:hidden">
               <button
@@ -61,11 +62,11 @@ function RecruitersHub() {
             Access verified US talent through AI-powered video profiles and
             revolutionize how you evaluate candidates
           </p>
-          <a href="" target="_self">
+          <Link to="" target="_self">
             <button className="font-poppins bg-[#4a90e2] text-white px-8 py-3 rounded-lg hover:bg-[#357abd] text-lg">
               Start Hiring
             </button>
-          </a>
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -226,7 +227,7 @@ function RecruitersHub() {
             </div>
             <button className="mt-8 font-poppins bg-[#4a90e2] text-white px-8 py-3 rounded-lg hover:bg-[#357abd] text-lg">
               <i className="fas fa-handshake mr-2"></i>
-              <a href="/recruiters-registration">Join as a Recruiter</a> 
+              <Link to="/recruiters-registration">Join as a Recruiter</Link> 
             </button>
           </div>
         </section>
